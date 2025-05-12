@@ -2,10 +2,16 @@
  
 ## CSCI3345 Machine Learning Final Project
 
-We use two models and two datasets to create a TTS model. The first model uses a pre-trained BERT model and a custom dataset, which is the whole Bee Movie script read by a roommate for $20. The second model uses a large CNN and a better Kaggle dataset
+We use three models and three datasets to create three TTS models. 
 
+The first model uses a pre-trained BERT model and a custom dataset, which is the whole Bee Movie script read by a roommate for $20.
+The second model uses a variational autoencoder and the LJSpeech dataset.
+The third model uses transformers with a pretrained LSTM on the VCTK Speech dataset.
 
-Improvements can be used by paying the roommate $20 again to read the Zoolander script, or by training the first model also on the Kaggle Dataset.
+# Running Models
+Each model can be ran by running it in google colab. Since we do not have access to GPUs on our computers, we did model training and development on google colab. For recording Nick's voice, a mac with custom recording software was also used.
 
-
-Results are clear enough to understand audio; however, there is robotic noise in the background of the first model trained on the roommate dataset. Further training on the Kaggle dataset may be able to reduce this, but this has not been done yet.
+# Contributions
+Ike - Model 1 and custom dataset
+Sam - Model 2 and LJSpeech dataset
+Luke - Model 3 with VCTK Speech dataset
