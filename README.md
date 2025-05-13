@@ -11,7 +11,7 @@ The third model uses transformers with a pretrained LSTM on the VCTK Speech data
 # Running Models
 Each model can be ran by running it in google colab. Since we do not have access to GPUs on our computers, we did model training and development on google colab. For recording Nick's voice, a mac with custom recording software was also used.
 
-For the VAENAR-TTS model, the training model doesn't need to be ran as the best trained parameters will already be provided. Simply skip over that section and ensure that the path to the pre-trained parameters is valid.
+For the VAENAR-TTS model, the training model doesn't need to be ran as the best trained parameters will already be provided. Simply skip over that section and ensure that the path to the pre-trained parameters is valid. You also don't need to mount the Google Drive, as this was used to save model parameters throughout the epochs and track losses. To see the dimensionality of each module, set the variable validation to be True. You will need to put in the path for the TTS parameters in the inference section, as the path is currently pointing to your Google Drive.
 
 # Contributions
 Ike - Model 1 and custom dataset
